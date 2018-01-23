@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="main.css"> 
+		<script src="pagescript.js"></script>
+		<title>Oranges Electronics Store</title>
+	</header>
+
+	<nav>
+		<ul style="overflow: hidden;">
+			<li><a id="home">Home</a></li>
+			<li class="dropdown">
+			<a class="dropbtn">Browse</a>
+				<div class="dropdown-content" id="browse">
+					<a id="category">Category</a>
+					<a id="company">Company</a>
+				</div>
+			</li>
+			<li><a id="about">About</a></li>
+			<div id="search">
+				Search: <input type="text" name="searchQuery" id="searchQuery" onkeydown="enterKeyDown(event)"<br>
+				<input type="button" value="Submit" onclick="search()">
+			</div>
+			<div id="social">
+				<a href="https://www.facebook.com/OrangeElectronics-577425782418902/" target="blank"> <img src="images/facebook.png" height="20%" width="20%"/> </a>
+			</div>
+			<img id="logo" src="images/logo.png" height="150px" width="475px"/>
+			<div id="cart">
+				<li><br><img onclick="changeToCart()" src="images/cart.png" alt="Checkout" style="width:150px;height:119px;"></li>
+			</div>
+		</ul>
+	</nav>
+	
+	<footer id="footer">
+		<i>&copy Orange Electronics Store By: Andy, Sathursan, and Alex</i>
+	</footer>
+	
+	<body onload="changeToHome()">
+		<div id="content"/>
+	</body>
+	
+</html>
